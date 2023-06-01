@@ -25,10 +25,12 @@ public class BasketService {
     // TODO - Task 3: add basketProduct to basket using the basketRepository
     // Hint: basketRepository.someMethod(variableToPassIntoMethod);
     public Basket addToBasket(final Long productId) {
-
         BasketProduct basketProduct = basketProductService.createBasketProduct(getBasket(), productId);
         basketProduct.increaseQuantity();
-        return null;
+
+        basketRepository.addProductToBasket(getBasket(), basketProduct);
+
+        return getBasket();
     }
 
     // TODO - Task 5: remove basketProduct from the basket using the basketRepository
