@@ -7,7 +7,7 @@ function Header() {
     const navigate = useNavigate();
     return (
         <div className="page-header">
-            <h1 onClick={() => goToHomePage(navigate)}>Jurassic Bark</h1>
+            <h1 onClick={() => goToHomePage(navigate)}>Jurassic Bark </h1>
             <NavigationBar/>
         </div>
     );
