@@ -30,3 +30,29 @@
   grid-template-columns: 10% 25% 25% 10% 15% 15%;
   margin: 2%;
 }
+
+.add-to-basket {
+  background-color: #285430;
+  color: white;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+}
+
+.add-to-basket:hover {
+  background-color: #487450;
+}
+
+.remove-from-basket {
+  background-color: lightgrey;
+  color: black;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+}
+
+.remove-from-basket:hover {
+  background: darkgray; 
+}

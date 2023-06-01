@@ -7,8 +7,13 @@ function Products(props: { products: product[] }) {
             <div className="products-container">
                 {props.products?.map((product) => {
                     return (
-                        <Product key={product.id} id={product.id} name={product.name} description={product.description}
-                                 price={product.price}/>)
+                        <Product
+                            key={product.id}
+                            id={product.id}
+                            name={product.name}
+                            description={product.description}
+                            price={product.price}
+                        />)
                 })}
             </div>
     );

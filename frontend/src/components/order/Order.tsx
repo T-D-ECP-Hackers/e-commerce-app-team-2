@@ -2,8 +2,17 @@ import React from 'react';
 import {basketProduct} from "../../model/basketProductType";
 import OrderProducts from "./OrderProducts";
 import {order} from "../../model/orderType";
+import { completeOrder } from '../../api/fetchOrders';
 
 function Order(props: { id: string; dateTimeOfOrder: string; orderedProducts: basketProduct[]; totalCost: number, completed: boolean; setOrders: (value: (((prevState: order[]) => order[]) | order[])) => void }) {
+
+    const handleCompleteOrder = () => {
+        completeOrder(
+            props.id,
+            props.setOrders
+        );
+      };
+    
 
     return (
         <div className="order">
@@ -15,6 +24,11 @@ function Order(props: { id: string; dateTimeOfOrder: string; orderedProducts: ba
                 <OrderProducts orderProducts={props.orderedProducts}/>
             </div>
             {/*TODO - Task 13: add a complete order button here*/}
+            {props.completed ? (
+                <p>Order Completed</p>
+            ) : (
+                <button onClick={handleCompleteOrder}>Complete Order</button>
+            )}
         </div>
     );
 }

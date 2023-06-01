@@ -6,7 +6,7 @@
 }
 
 .checkout-button {
-  background-color: lightgrey;
+  background-color: #609966;
   color: black;
   display: flex;
   cursor: pointer;
@@ -66,7 +66,7 @@
 .checkout-summary {
   width: 80%;
   height: 50vh;
-  background-color: lightgrey;
+  background-color: #EDF1D6;
   border-radius: 0.5em;
   display: grid;
   align-items: center;
@@ -74,7 +74,18 @@
 }
 
 .checkout-summary-buttons {
-  display: flex;
+  display: block;
   cursor: pointer;
   column-gap: 10%;
+  column-count: 2;
+  padding: 10px;
+}
+
+.checkout-summary-button {
+  display: block;
+  background-color: #285430;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  width: 150px;
 }

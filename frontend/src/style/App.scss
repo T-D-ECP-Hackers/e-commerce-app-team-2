@@ -12,6 +12,7 @@
 
 .app-body {
   display: grid;
+  grid-template-columns: 30% 70%;
   justify-items: center;
   padding-top: 4%;
 }
@@ -19,9 +20,20 @@
 .products-block {
   width: 80%;
   height: 33vh;
-  background-color: lightgrey;
+  background-color: #487450;
+  color: black;
+  text-transform: bold;
   border-radius: 0.5em;
   text-align: center;
   display: grid;
   align-items: center;
+  margin-top: 25px;
+}
+
+.products-block:hover {
+  background: #285430; 
+}
+
+.vision {
+  padding-right: 40px;
 }
