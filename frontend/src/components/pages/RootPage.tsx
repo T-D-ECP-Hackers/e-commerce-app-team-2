@@ -20,6 +20,7 @@ function RootPage() {
             </div>
             <div className="vision">
                 <h3>Jurassic Bark: curating dog food adventures for a dino-mite dining experience!</h3>
+                <h4><i>All Natural. All Jurassic. All Bark.</i></h4>
                 <p>
                 <i>Embarking</i> on a <b>pawsitively</b> thrilling adventure, <b>Jurassic Bark</b> is on a mission to curate dog food that echoes the diverse diets of dinosaurs!</p>
                 <p>From herbivorous munchies to carnivorous delights, our high-quality and <i>tail-rrific</i> meals are crafted to cater to your furry friend's specific dietary needs. With meticulous research and a commitment to excellence, we <i>unleash</i> a <b>roaring</b> selection that satisfies taste buds and fuels vitality.</p>

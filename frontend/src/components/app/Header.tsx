@@ -12,7 +12,9 @@ function Header() {
         <div className="page-header">
             <div className="header-1">
                 <img className="logo" src={imageToAdd} onClick={() => goToHomePage(navigate)} alt='DinoDog Mascot Logo for Jurassic Bark'></img>
-                <h1 onClick={() => goToHomePage(navigate)}>Jurassic Bark </h1>
+                <div>
+                    <h1 onClick={() => goToHomePage(navigate)}>Jurassic Bark </h1>
+                </div>
             </div>
             <NavigationBar/>
         </div>

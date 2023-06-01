@@ -31,9 +31,9 @@ function CheckoutPage() {
                 <>
                     <div className="header-container">
                         <div className="checkout-button" onClick={() => setShowCheckoutSummary(true)}>
-                            <h1>Total Cost of Products - £ {getTotalCostOfProducts(basket.currentBasket)}</h1>
-                            <h1>Checkout
-                                - {basket.currentBasket == null ? 0 : basket.currentBasket.totalProducts} Products</h1>
+                            <h3>Total Cost of Products - £ {getTotalCostOfProducts(basket.currentBasket)}</h3>
+                            <h3>Checkout
+                                - {basket.currentBasket == null ? 0 : basket.currentBasket.totalProducts} Products</h3>
                         </div>
                     </div>
                     <CheckoutBody basket={getBasket(basket.currentBasket)}/>
