@@ -46,7 +46,7 @@ public class BasketService {
     // TODO - Task 8: implement checkout method
     public Basket checkout() {
 
-        basketRepository.clear(basketProduct);
+        basketRepository.clear();
 
         return getBasket();
     }
