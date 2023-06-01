@@ -39,7 +39,7 @@ public class BasketService {
 
         BasketProduct basketProduct = basketProductService.createBasketProduct(getBasket(), productId);
         basketProduct.decreaseQuantity();
-        basketRepository.removeFromBasket(basketProduct);
+        basketRepository.remove(basketProduct);
         return getBasket();
     }
 
