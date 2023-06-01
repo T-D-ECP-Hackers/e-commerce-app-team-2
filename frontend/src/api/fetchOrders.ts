@@ -39,7 +39,7 @@ export function completeOrder(
         ).then(response => {
             if (response.status === 200) {
                 console.log("Order completed successfully" + response.data);
-            fetchOrders(setOrders);
+                fetchOrders(setOrders);
             }
         }).catch(error => {
             console.log("Error completing order: " + error);
