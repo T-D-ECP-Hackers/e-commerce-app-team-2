@@ -6,6 +6,7 @@ import java.util.UUID;
 
 import lombok.extern.slf4j.Slf4j;
 import org.global.ecp.hackathon.app.email.EmailService;
+import static org.springframework.util.CollectionUtils.isEmpty;
 import org.global.ecp.hackathon.app.order.model.Order;
 import org.global.ecp.hackathon.app.order.model.OrderRequest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,7 @@ public class OrderService {
 
     // TODO - Task 9: implement this method
     public UUID createOrder(final OrderRequest orderRequest) {
-        if (orderRequest.getBasket().isEmpty()) {
+        if (isEmpty(orderRequest.getBasket().getBasketProducts())) {
             log.error("Basket is empty");
         }
 
@@ -44,7 +45,7 @@ public class OrderService {
         }
 
         // 5. Save the order using the orderRepository
-        orderRepository.save(order);
+//        orderRepository.save(order);
         return orderId;
 
     }
