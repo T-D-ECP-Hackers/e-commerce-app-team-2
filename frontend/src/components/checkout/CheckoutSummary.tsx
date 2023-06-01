@@ -56,7 +56,7 @@ function CheckoutSummary({setShowCheckoutSummary}: { setShowCheckoutSummary: Rea
                 <label>Shipping cost - £ {shippingCost}</label>
                 <label>Total cost - £ {getTotalCost(totalCostOfItems, shippingCost)}</label>
                 <div className="checkout-summary-buttons">
-                    <div className="checkout-summary-button" onClick={() => setShowCheckoutSummary(false)}>Go Back</div>
+                    <div className="checkout-summary-button" onClick={() => setShowCheckoutSummary(true)}>Go Back</div>
                     <div className="checkout-summary-button" onClick={() => checkoutBasket()}>Complete Checkout</div>
                 </div>
 
