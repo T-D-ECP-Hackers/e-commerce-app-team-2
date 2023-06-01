@@ -23,6 +23,7 @@ export function fetchOrders(setOrders: (value: (((prevState: order[]) => order[]
         ).then(response => {
             if (response.status === 200) {
                 setOrders(response.data);
+                console.log("Fetching order - order number: " + response.data);
             }
         }).catch(error => {
             console.log("Error fetching orders: " + error);
@@ -37,10 +38,10 @@ export function completeOrder(
     axios.post(ordersURL
         ).then(response => {
             if (response.status === 200) {
-                console.log('Order completed successfully');
+                console.log("Order completed successfully" + response.data);
             fetchOrders(setOrders);
             }
         }).catch(error => {
-            console.log('Error completing order: ' + error);
+            console.log("Error completing order: " + error);
         });
 }
