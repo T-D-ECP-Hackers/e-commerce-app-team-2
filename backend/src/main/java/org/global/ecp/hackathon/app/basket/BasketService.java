@@ -45,9 +45,8 @@ public class BasketService {
 
     // TODO - Task 8: implement checkout method
     public Basket checkout() {
-        // Perform necessary actions for checkout, such as creating an order, processing payment, etc.
-        // Clear the basket after checkout.
-        basketRepository.clearBasket(getBasket());
+        // Hint: use the basketRepository to checkout the basket
+        basketRepository.checkout(basketProduct);
 
         return getBasket();
     }
