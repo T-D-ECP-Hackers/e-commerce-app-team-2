@@ -25,6 +25,7 @@ public class OrderService {
     public UUID createOrder(final OrderRequest orderRequest) {
         if (orderRequest.getBasket().isEmpty()) {
             log.error("Basket is empty");
+            return null;
         }
 
         // 1. Generate a random order ID using UUID.randomUUID()
