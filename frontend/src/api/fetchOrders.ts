@@ -30,5 +30,17 @@ export function fetchOrders(setOrders: (value: (((prevState: order[]) => order[]
 }
 
 // TODO - Task 13: Implement a complete order axios fetch method to call the backend api
-export function completeOrder(orderId: any, setOrders: (value: (((prevState: order[]) => order[]) | order[])) => void) {
+export function completeOrder(
+    orderId: any,
+    setOrders: (value: (((prevState: order[]) => order[]) | order[])) => void) {
+
+    axios.post(ordersURL
+        ).then(response => {
+            if (response.status === 200) {
+                console.log('Order completed successfully');
+            fetchOrders(setOrders);
+            }
+        }).catch(error => {
+            console.log('Error completing order: ' + error);
+        });
 }
