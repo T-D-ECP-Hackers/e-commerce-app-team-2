@@ -1,5 +1,6 @@
 package org.global.ecp.hackathon.app.order;
 
+import java.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -22,8 +23,30 @@ public class OrderService {
 
     // TODO - Task 9: implement this method
     public UUID createOrder(final OrderRequest orderRequest) {
+        if (orderRequest.getBasket().isEmpty()) {
+            log.error("Basket is empty");
+        }
 
-        return null;
+        // 1. Generate a random order ID using UUID.randomUUID()
+        UUID orderId = UUID.randomUUID();
+
+        // 2. generate a LocalDateTime object using LocalDateTime.now()
+        LocalDateTime orderDate = LocalDateTime.now();
+
+        // 3. create a new Order object using the OrderRequest object and the generated
+        // order ID and order date
+        Order order = new Order(orderId, orderDate, orderRequest.getTotalCost(),
+                orderRequest.getBasket().getBasketProducts());
+
+        // 4. Return null in the createOrder() method if the order is null
+        if (order == null) {
+            return null;
+        }
+
+        // 5. Save the order using the orderRepository
+        orderRepository.save(order);
+        return orderId;
+
     }
 
     public List<Order> getAllOrders() {
