@@ -21,7 +21,10 @@ function RootPage() {
             <div className="vision">
                 <h3>Jurassic Bark: curating dog food adventures for a dino-mite dining experience!</h3>
                 <p>
-                Embarking on a pawsitively thrilling adventure, Jurassic Bark is on a mission to curate dog food that echoes the diverse diets of dinosaurs! From herbivorous munchies to carnivorous delights, our high-quality and tail-rrific meals are crafted to cater to your furry friend's specific dietary needs. With meticulous research and a commitment to excellence, we unleash a roaring selection that satisfies taste buds and fuels vitality. Trust Jurassic Bark to bring prehistoric flavors to modern-day pets, delivering a dino-mite dining experience that transforms their lives, one delicious bite at a time. Together, let's journey back in time and discover a world where dogs devour meals inspired by the legendary appetites of their dinosaur ancestors!
+                <i>Embarking</i> on a <b>pawsitively</b> thrilling adventure, <b>Jurassic Bark</b> is on a mission to curate dog food that echoes the diverse diets of dinosaurs!</p>
+                <p>From herbivorous munchies to carnivorous delights, our high-quality and <i>tail-rrific</i> meals are crafted to cater to your furry friend's specific dietary needs. With meticulous research and a commitment to excellence, we <i>unleash</i> a <b>roaring</b> selection that satisfies taste buds and fuels vitality.</p>
+                <p>Trust <b>Jurassic Bark</b> to bring <i>prehistoric</i> flavours to modern-day pets, delivering a <b>dino-mite</b> dining experience that transforms their lives, one delicious bite at a time.</p>
+                <p>Together, let's <i>journey back in time</i> and discover a world where dogs devour meals inspired by the legendary appetites of their dinosaur ancestors!
                 </p>
             </div>
         </div>
